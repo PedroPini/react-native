@@ -5,11 +5,16 @@ export default function App() {
 
 
   return (
-    <SafeAreaView style={styles.container}>
+  
       <View style={{backgroundColor: "dodgerblue", 
-        width: '50%',
-        height: useDeviceOrientation().landscape ? '100%' : '30%'}}></View>
-    </SafeAreaView>
+        flex: 1}}>
+          <View style={{backgroundColor: "dodgerblue", 
+         flex: 2}}></View>
+         <View style={{backgroundColor: "gold", 
+         flex: 1}}></View>
+         <View style={{backgroundColor: "tomato", 
+         flex: 1}}></View>
+        </View>
   );
 }
 
